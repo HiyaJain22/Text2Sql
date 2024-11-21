@@ -69,6 +69,6 @@ Acknowledgments
 -Spider Dataset
 -Hugging Face
 
-# Model is uploadede on Hugging Face 
+# Model is uploaded on Hugging Face 
 Feel free to check it out- 
 https://huggingface.co/Hiyaj/bart-small-text2sql
