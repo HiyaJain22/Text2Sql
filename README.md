@@ -49,9 +49,9 @@ Installation
 
 # Example usage
 natural_language_query = "Show me the top 5 customers by total sales"
-sql_query = convert_to_sql(natural_language_query)
+sql_query = convert_to_sql(natural_language_query) 
+
 print(sql_query)
-Contributing
 
 # Contact
 
