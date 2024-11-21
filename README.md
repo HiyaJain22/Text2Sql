@@ -44,7 +44,7 @@ Evaluated using BELU score
 
 Installation
 ```bash
-   git clone https://github.com/aryanntated/Top-11-T20-Cricket-Players-of-2022.git
+   git clone https://github.com/aryanntated/Text2Sql.git
    ```
 
 # Setup virtual environment (recommended)
