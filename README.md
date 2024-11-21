@@ -65,9 +65,9 @@ Yash Thakkar - yashthakar2710@gmail.com
 
 # Acknowledgments
 
--WikiSQL Dataset
--Spider Dataset
--Hugging Face
+- WikiSQL Dataset
+- Spider Dataset
+- Hugging Face
 
 # Model is uploaded on Hugging Face 
 Feel free to check it out- 
