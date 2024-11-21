@@ -43,9 +43,9 @@ Fine-tuned model deployed on Hugging Face
 Evaluated using BELU score
 
 Installation
-bashCopy# Clone the repository
-git clone https://github.com/aryanntated/Text2Sql.git
-cd text-to-sql-converter
+```bash
+   git clone https://github.com/aryanntated/Top-11-T20-Cricket-Players-of-2022.git
+   ```
 
 # Setup virtual environment (recommended)
 python -m venv venv
