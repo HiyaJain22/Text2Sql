@@ -44,7 +44,7 @@ Evaluated using BELU score
 
 Installation
 bashCopy# Clone the repository
-git clone https://github.com/yourusername/text-to-sql-converter.git
+git clone https://github.com/aryanntated/Text2Sql.git
 cd text-to-sql-converter
 
 # Setup virtual environment (recommended)
@@ -61,12 +61,6 @@ natural_language_query = "Show me the top 5 customers by total sales"
 sql_query = convert_to_sql(natural_language_query)
 print(sql_query)
 Contributing
-
-Fork the repository
-Create your feature branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some feature')
-Push to the branch (git push origin feature/AmazingFeature)
-Open a Pull Request
 
 Contact
 
