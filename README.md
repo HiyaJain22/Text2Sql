@@ -63,7 +63,7 @@ Aryann Tated - aryann.k.tate@gmail.com
 Yash Thakkar - yashthakar2710@gmail.com
 
 
-Acknowledgments
+# Acknowledgments
 
 -WikiSQL Dataset
 -Spider Dataset
