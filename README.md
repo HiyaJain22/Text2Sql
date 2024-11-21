@@ -57,7 +57,9 @@ print(sql_query)
 # Contact
 
 Hiya Jain - hjain2209@gmail.com
+
 Aryann Tated - aryann.k.tate@gmail.com
+
 Yash Thakkar - yashthakar2710@gmail.com
 
 
@@ -66,3 +68,7 @@ Acknowledgments
 -WikiSQL Dataset
 -Spider Dataset
 -Hugging Face
+
+# Model is uploaded on Hugging Face 
+
+https://huggingface.co/Hiyaj/bart-small-text2sql
