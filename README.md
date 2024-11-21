@@ -47,22 +47,13 @@ Installation
    git clone https://github.com/aryanntated/Text2Sql.git
    ```
 
-# Setup virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-
-# Install dependencies
-pip install -r requirements.txt
-Usage
-pythonCopyfrom text2sql_converter import convert_to_sql
-
 # Example usage
 natural_language_query = "Show me the top 5 customers by total sales"
 sql_query = convert_to_sql(natural_language_query)
 print(sql_query)
 Contributing
 
-Contact
+# Contact
 
 Hiya Jain - hjain2209@gmail.com
 Aryann Tated - aryann.k.tate@gmail.com
