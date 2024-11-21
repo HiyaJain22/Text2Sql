@@ -1,93 +1,82 @@
-Overview
-The Text2SQL Converter is an AI-powered tool designed to bridge the gap between non-technical users and databases. This project leverages state-of-the-art natural language processing (NLP) models to translate plain-text questions into SQL commands, making database interactions accessible for everyone.
+# Overview
+Text-to-SQL converter bridges the gap between non-technical users and databases, enabling anyone to query data without SQL expertise. This project transforms natural language questions into precise SQL queries using advanced machine learning techniques.
 
-Features
-Converts natural language queries into SQL commands.
-Utilizes the BART Transformer model fine-tuned for text-to-SQL tasks.
-Built upon robust datasets like WikiSQL and Spider, comprising over 78,000 query pairs.
-Employs SQLGlot for SQL query parsing and optimization.
-Evaluated using BLEU scores for accurate performance measurement.
-Repository Link
-Explore the repository here.
+# Features
+- Convert natural language prompts to SQL queries.
+- Support for complex database interactions.
+- Uses advanced language models for accurate query generation.
+- Trained on extensive dataset of language-SQL query pairs.
 
-Data Source and Preparation
-The project utilizes the WikiSQL and Spider datasets, which include thousands of natural language queries paired with their SQL equivalents.
+# Dataset and Model
+## Training Data
 
-Data Processing Steps:
-Data loaded and preprocessed using Python.
-Integrated with SQLGlot for query optimization and column type inference.
-Final dataset used for training and testing the BART model.
-How to Use
-Follow these steps to set up and run the project:
+Datasets: WikiSQL and Spider
+Total Examples: 78,577 natural language queries paired with SQL queries
+Columns: Questions, Answers, Context
 
-Clone the repository:
+## Model Architecture
+BART Model
+-Combines bidirectional encoder (like BERT) with autoregressive decoder (like GPT)
+-Employs advanced training techniques:
+  - Token masking
+  - Deletion
+  - Text infilling
+  - Sentence permutation
+  - Document rotation
 
-bash
-Copy code
-git clone https://github.com/HiyaJain22/Text2Sql.git
-cd Text2Sql
-Install the required dependencies:
 
-bash
-Copy code
+
+## Query Parsing
+
+- SQLGlot used to parse queries
+- Infers column types from:
+
+   - Operators (>, <)
+   - Functions (MIN, MAX, AVG, SUM)
+   - Defaults to VARCHAR if uncertain
+
+
+
+## Performance
+
+Fine-tuned model deployed on Hugging Face
+Evaluated using BELU score
+
+Installation
+bashCopy# Clone the repository
+git clone https://github.com/yourusername/text-to-sql-converter.git
+cd text-to-sql-converter
+
+# Setup virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+
+# Install dependencies
 pip install -r requirements.txt
-Run the text-to-SQL script:
+Usage
+pythonCopyfrom text2sql_converter import convert_to_sql
 
-bash
-Copy code
-python run_text2sql.py
-Input a natural language query and receive the generated SQL command.
-
-Example:
-python
-Copy code
-from text2sql import generate_sql
-
-query = "List all customers who placed an order in 2022."
-sql = generate_sql(query)
-print(sql)  # Output: SELECT * FROM customers WHERE order_date BETWEEN '2022-01-01' AND '2022-12-31';
-Model and Architecture
-Model:
-BART (Bidirectional and Auto-Regressive Transformers):
-Combines a bidirectional encoder and autoregressive decoder.
-Trained with corruption techniques to enhance natural language understanding and reconstruction.
-Architecture:
-User Input: A plain-text query is provided by the user.
-BART Model: Processes the input and generates an equivalent SQL command.
-SQLGlot: Refines the generated SQL syntax and ensures accuracy.
-Performance Evaluation
-Fine-tuned model hosted on Hugging Face: Text2SQL BART Model.
-Evaluation metrics: BLEU scores are used to validate translation quality.
-Prerequisites
-Python: Version 3.8 or higher.
-Required libraries: transformers, SQLGlot, pandas, numpy, scikit-learn.
-Screenshots
-Input and Output Example:
-
-
-Model Architecture Visualization:
-
-
+# Example usage
+natural_language_query = "Show me the top 5 customers by total sales"
+sql_query = convert_to_sql(natural_language_query)
+print(sql_query)
 Contributing
-Contributions are welcome! If you want to contribute to this project:
 
-Fork the repository.
-Create a feature branch:
-bash
-Copy code
-git checkout -b feature-name
-Commit your changes:
-bash
-Copy code
-git commit -m "Added feature X"
-Push to the branch:
-bash
-Copy code
-git push origin feature-name
-Open a pull request for review.
+Fork the repository
+Create your feature branch (git checkout -b feature/AmazingFeature)
+Commit your changes (git commit -m 'Add some feature')
+Push to the branch (git push origin feature/AmazingFeature)
+Open a Pull Request
+
 Contact
-For questions or suggestions, please reach out to us:
 
-Hiya Jain: hiyajain22@example.com
-Aryann Tated: aryann.tated@example.com
-Yash Thakar: yash.thakar@example.com
+Hiya Jain - hjain2209@gmail.com
+Aryann Tated - aryann.k.tate@gmail.com
+Yash Thakkar - yashthakar2710@gmail.com
+
+
+Acknowledgments
+
+-WikiSQL Dataset
+-Spider Dataset
+-Hugging Face
