@@ -44,7 +44,7 @@ Evaluated using BELU score
 
 Installation
 ```bash
-   git clone https://github.com/aryanntated/Text2Sql.git
+   git clone https://github.com/HiyaJain22/Text2Sql.git
    ```
 
 # Example usage
@@ -58,7 +58,7 @@ print(sql_query)
 
 Hiya Jain - hjain2209@gmail.com
 
-Aryann Tated - aryann.k.tate@gmail.com
+Aryann Tated - aryann.k.tated@gmail.com
 
 Yash Thakkar - yashthakar2710@gmail.com
 
