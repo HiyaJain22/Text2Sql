@@ -58,7 +58,7 @@ print(sql_query)
 
 Hiya Jain - hjain2209@gmail.com
 
-Aryann Tated - aryann.k.tate@gmail.com
+Aryann Tated - aryann.k.tated@gmail.com
 
 Yash Thakkar - yashthakar2710@gmail.com
 
